@@ -8,5 +8,5 @@ class TestCalculateAgeFromYear(unittest.TestCase):
         self.assertEqual(calculate_age_from_year(current_year - 20), 20)
         self.assertEqual(calculate_age_from_year(current_year - 1), 1)
 
-if __name__ == '__mgit ain__':
+if __name__ == '__main__':
     unittest.main()
