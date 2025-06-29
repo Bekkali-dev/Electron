@@ -1,8 +1,12 @@
 from datetime import date
-def age():
-    current_year = date.today().year
-    year=int(input("Enter the year you were Born: "))
-    calculation= current_year - year
-    print(f"Your age is {calculation} years")
 
-age()
+def calculate_age_from_year(year):
+    current_year = date.today().year
+    return current_year - year
+
+def calculate_age():
+    year = int(input("Enter the year you were Born: "))
+    age = calculate_age_from_year(year)
+    print(f"Your age is {age} years")
+
+calculate_age()
