@@ -1,12 +1,12 @@
 from datetime import date
 
-def calculate_age_from_year(year):
+def age()->None:  
     current_year = date.today().year
-    return current_year - year
+    year=int(input("Enter the year you were Born: "))
+    calculation= current_year - year
+    print(f"Your age is {calculation} years")
 
-def calculate_age():
-    year = int(input("Enter the year you were Born: "))
-    age = calculate_age_from_year(year)
-    print(f"Your age is {age} years")
+if __name__ == "__main__":
+    age()
 
-calculate_age()
+
